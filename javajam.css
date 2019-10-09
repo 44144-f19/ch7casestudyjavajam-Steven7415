@@ -23,6 +23,11 @@ h4 { background-color: #D2B48C;
 	padding-bottom: 0;
 	clear: left;
 }
+#mobile {display: none;}
+#desktop {display: in-line;}
+
+
+
 nav { text-align: center; 
      font-weight: bold; 
 	 font-size: 1.5em;
@@ -41,6 +46,7 @@ main { padding: 0 0 2em 0;
 	  background-color: #FEF6C2;
 	  display: block;
 }
+
 main h2, main h3, main h4, main p, main div, main ul, main dl { padding-left: 3em; padding-right: 2em; }
 
 footer { background-color: #D2B48C;
@@ -76,3 +82,65 @@ img { padding-left: 10px;
              padding-right: 2em;
 			 padding-bottom: 2em;
 }
+
+@media only screen and (max-width: 1024px){
+    body {margin: 0px;}
+    #wrapper {
+        min-width: 0px;
+        margin: 0px;
+        padding: 0px;
+        box-shadow: none;}
+    header {
+        border-bottom: 5px solid #FEF6C2;}
+    h1 {margin-top: 0px;
+        margin-bottom: 1em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        font-size: 2.5em;}
+    nav {float: none;
+        width: auto;
+        padding-top: 0px;
+        margin: 10px;
+        font-size: 1.3em;}
+    nav li {display: inline-block;}
+    nav a {padding: 1em;
+            width: 8em;
+            font-weight: bold;
+            border-style: none;}
+    nav ul {padding: 0px;
+            margin: 0px;}
+    #heroroad {margin: 0px; padding: 0px;}
+    #heromugs {margin: 0px; padding: 0px;}
+    #heroguitar {margin: 0px; padding: 0px;}
+    main {margin: 0px;
+            font-size: 90%;}
+}
+@media only screen and (max-width: 768px) {
+    header {background-image: url(javajammini.jpg);
+            height: 128px;}
+    h1 {font-size: 2em;
+        text-align: center;
+        padding-left: 0px;}
+    nav {margin: 0px;}
+    nav a {display: block;
+            padding: 0.2em;
+            width: auto;
+            border-bottom: #FEF6C2;}
+    nav li {display: block;}
+    main {padding-top: 1px;}
+    h2 {padding-top: 0.5em;
+        padding-right: 0em;
+        padding-bottom: 0em;
+        padding-left: 0.5em;
+        margin-right: 0.5em;}
+    details {padding-left: 0em;
+            padding-right: 0em;}
+    #heroroad {background-image: none; height: auto;}
+    #heromugs {background-image: none; height: auto;}
+    #heroguitar {background-image: none; height: auto;}
+    floatleft {padding-left: 0.5em; padding-right: 0.5em;}
+    #mobile {display: inline;}
+    #desktop {display: none;}
+    
+}
+
